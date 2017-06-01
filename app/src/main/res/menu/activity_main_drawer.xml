@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="RealEstate_search" />
+        <item
+            android:id="@+id/nav_addproperty"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Add Property" />
+        <item
+            android:id="@+id/nav_propertyinfo"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Information of Property" />
+        <item
+            android:id="@+id/nav_propertysearch"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Search Property" />
+        <item
+            android:id="@+id/nav_myproperty"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Property" />
+        <item
+            android:id="@+id/nav_selling"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Selling" />
+        <item
+            android:id="@+id/nav_rent"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Rent" />
+        <item
+            android:id="@+id/nav_commplot"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Commercial Plots" />
+
+        <item
+            android:id="@+id/nav_compose_email"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Compose_Email" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Inbox" />
+
+        <item
+            android:id="@+id/nav_allagents"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="All Agents" />
+        <item
+            android:id="@+id/nav_agentsearch"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Agent Search" />
+
+        <item android:title="Price Index">
+    <menu>
+        <item
+            android:id="@+id/nav_homepriceindex"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_plotspriceindex"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Plots"/>
+        <item
+            android:id="@+id/nav_commercialspriceindex"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Commercials"/>
+    </menu>
+        </item>
+    </group>
+
+    <item android:title="Personal/Other Information">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Map" />
+            <item
+                android:id="@+id/nav_blog"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Blog" />
+        </menu>
+    </item>
+
+</menu>

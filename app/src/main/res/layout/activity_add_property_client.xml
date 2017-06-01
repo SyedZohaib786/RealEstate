@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    tools:context="com.fyp.hp.realestate.AddPropertyClient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/btnAddProperty"
+        android:layout_marginBottom="34dp"
+        android:layout_toEndOf="@+id/Latitude"
+        android:layout_toRightOf="@+id/Latitude"
+        tools:ignore="ScrollViewSize">
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/imageViewForSelection"
+            android:layout_toStartOf="@+id/imageViewForSelection"
+            android:background="@drawable/ic_insert_photo_black_18dp" />
+
+        <ImageView
+            android:id="@+id/imageViewForSelection"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/btnSelectImage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="125dp"
+            android:layout_marginRight="125dp"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/etPropName"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAmountProperty"
+            android:layout_alignStart="@+id/etAmountProperty"
+            android:layout_below="@+id/btnSelectImage"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Enter Property Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etPropDes"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etPropName"
+            android:layout_alignRight="@+id/etPropName"
+            android:layout_below="@+id/etPropName"
+            android:ems="10"
+            android:hint="Enter Property Descriprion"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etPropArea"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPropDes"
+            android:layout_alignStart="@+id/etPropDes"
+            android:layout_below="@+id/etPropDes"
+            android:ems="10"
+            android:hint="Enter Property Area (Sq. Yards)"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etAmountProperty"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPropArea"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etClientName"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAmountProperty"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter Client Name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etCell"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etClientName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter Contact Number"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etCell"
+            android:layout_alignStart="@+id/etCell"
+            android:layout_below="@+id/etCell"
+            android:ems="10"
+            android:hint='Enter your location like "location karachi"'
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLng"
+            android:layout_alignBottom="@+id/txtLng"
+            android:layout_alignLeft="@+id/etLocation"
+            android:layout_alignStart="@+id/etLocation"
+            android:text="Latitude" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Latitude"
+            android:layout_alignStart="@+id/Latitude"
+            android:layout_below="@+id/Latitude"
+            android:text="Longitude" />
+
+        <TextView
+            android:id="@+id/txtLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etLocation"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/Latitude"
+            android:layout_toStartOf="@+id/imageViewForSelection" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView18"
+            android:layout_toEndOf="@+id/spAgent"
+            android:layout_toRightOf="@+id/spAgent"
+            android:paddingLeft="30dip"
+            android:text="Select Features"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spfeature"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <Spinner
+            android:id="@+id/spPurpose"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="30dip"
+            android:text="For Purpose"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spPropertyType"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="30dip"
+            android:text="Choose Property Type"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spSubType"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView8"
+            android:paddingBottom="33dip" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="30dip"
+            android:text="Choose Property Sub Type"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spArea"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="30dip"
+            android:text="Choose Area"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spSubArea"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="30dip"
+            android:text="Choose Sub Area"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+
+        <Button
+            android:id="@+id/btnSearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_above="@+id/textView5"
+            android:layout_toEndOf="@+id/Lng"
+            android:layout_toRightOf="@+id/Lng"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Search"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+
+        <Button
+            android:id="@+id/btnAddProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_toLeftOf="@+id/imageViewForSelection"
+            android:layout_toStartOf="@+id/imageViewForSelection"
+
+            android:text="Add"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnAddProperty"
+            android:layout_alignStart="@+id/btnAddProperty"
+            android:layout_alignTop="@+id/txtLng" />
+
+        <TextView
+            android:id="@+id/Lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spfeature"
+            android:layout_alignEnd="@+id/Lat"
+            android:layout_alignRight="@+id/Lat" />
+
+        <Button
+            android:id="@+id/btnRequestToAgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spSubArea"
+            android:layout_alignStart="@+id/spSubArea"
+            android:layout_below="@+id/spSubArea"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:text="Send Request To Agent" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Options_Selection">
+        <item>Select Option..</item>
+        <item>All Agents</item>
+        <item>All Properties</item>
+        <item>Add Property</item>
+        <item>Search Property</item>
+        <item>Price Index</item>
+        <item>RealEstate</item>
+        <item>Contact Us</item>
+        <item>Map</item>
+        <item>Logout</item>
+
+
+
+    </string-array>
+</resources>

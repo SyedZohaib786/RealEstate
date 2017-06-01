@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fyp.hp.realestate.SpecificClientSearch"
+    android:background="@drawable/plain">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:maxHeight="5px"
+        android:maxWidth="3px"
+        app:srcCompat="@drawable/realestate"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,PxUsage"
+        android:background="@drawable/realestatebackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etRealEStateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter Client Name"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etEmailSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter Client E-Mail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etRealEStateName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+
+
+
+    <Button
+        android:id="@+id/btnSearchClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@+id/etEmailSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        tools:ignore="HardcodedText" />
+
+
+    <ListView
+        android:id="@+id/listViewSpecificClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearchClient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false" />
+
+
+</RelativeLayout>

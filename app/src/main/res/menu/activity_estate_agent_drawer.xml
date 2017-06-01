@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homeagent"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Home"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_research"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="RealEstate Search"
+            tools:ignore="HardcodedText" />
+        <item android:title="Agent"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/nav_allagents"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="All Agents" />
+                <item
+                    android:id="@+id/nav_agentsearch"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Agent Search"
+                    tools:ignore="HardcodedText" />
+            </menu>
+        </item>
+        <item android:title="Clients"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/clntAdd"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Add Client"
+                    tools:ignore="HardcodedText" />
+                <item
+                    android:id="@+id/clientinfo"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Information of Client" />
+                <item
+                    android:id="@+id/clientproperty"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Property of Client" />
+            </menu>
+        </item>
+        <item android:title="Property"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/nav_addproperty"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Add Property"
+                    tools:ignore="HardcodedText" />
+                <item
+                    android:id="@+id/propertyinfo"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Property Information"
+                    tools:ignore="HardcodedText" />
+            </menu>
+        </item>
+
+        <item android:title="MailBox"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/composemail"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Compose Email"
+                    tools:ignore="HardcodedText" />
+                <item
+                    android:id="@+id/inbox"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Inbox"
+                    tools:ignore="HardcodedText" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_commlist"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Comission List"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Blog"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_agntprofile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+
+
+    </group>
+
+
+</menu>

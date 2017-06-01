@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.fyp.hp.realestate.Login"
+    android:background="@drawable/realestatebackground"
+    android:weightSum="1">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/realestate"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/imageView2"
+        android:maxHeight="5px"
+        android:maxWidth="3px"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,PxUsage,RtlHardcoded"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:text="Exit"
+        android:layout_width="match_parent"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonexit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        tools:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="21sp"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <!--<TextView-->
+        <!--android:text="Not Registered?"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txtnotregister"-->
+        <!--android:fontFamily="serif-monospace"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textAlignment="center"-->
+        <!--tools:ignore="HardcodedText"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--tools:targetApi="jelly_bean"-->
+        <!--android:layout_below="@+id/btnlogn"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp">-->
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:hint="Enter User Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:fontFamily="serif-monospace"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp">-->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_below="@+id/etUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonexit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:layout_weight="0.01"
+        android:fontFamily="serif-monospace"
+        android:text="Not Registered?\n Click here"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,InefficientWeight,ObsoleteLayoutParam"
+        tools:targetApi="jelly_bean"
+         />
+
+    <RadioGroup
+        android:id="@+id/radioUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UnusedAttribute">
+
+    <RadioButton
+        android:id="@+id/agentRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:text="Agent"
+        android:checked="true"
+        tools:ignore="HardcodedText" />
+
+    <RadioButton
+        android:id="@+id/userRadio"
+        android:layout_width="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Client"
+        tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnlogn"-->
+
+        <!--android:text="Login"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_width="120dip"-->
+        <!--android:layout_height="50dip"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:shadowColor="#4050c4"-->
+        <!--android:shadowDx="0"-->
+        <!--android:shadowDy="0"-->
+        <!--android:shadowRadius="5"-->
+    <!--android:layout_above="@+id/btnsignup"-->
+    <!--android:layout_alignEnd="@+id/radioUserType"-->
+    <!--android:layout_alignRight="@+id/radioUserType"-->
+    <!--android:layout_marginBottom="46dp"-->
+        <!--android:layout_marginLeft="53dp"-->
+        <!--android:layout_marginStart="53dp"-->
+        <!--android:layout_marginTop="184dp"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_toRightOf="@+id/textView"-->
+        <!--android:layout_toEndOf="@+id/textView" />-->
+
+
+    <Button
+        android:id="@+id/btnlogn"
+        style="@android:style/Widget.ActionButton.Overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsignup"
+        android:layout_alignEnd="@+id/radioUserType"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/radioUserType"
+        android:layout_marginBottom="46dp"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,UnusedAttribute" />
+
+
+</RelativeLayout>

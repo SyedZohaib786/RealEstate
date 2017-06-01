@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fyp.hp.realestate.AddAgent"
+    android:background="@drawable/plain">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/etUserName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="5px"
+        android:maxWidth="3px"
+        android:background="@drawable/realestatebackground"
+        app:srcCompat="@drawable/realestate"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,PxUsage,UnknownIdInLayout" />
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:hint="Enter agent name"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/etEmailSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Valid E-mail"
+        android:layout_below="@+id/etname"
+        android:layout_alignRight="@+id/etname"
+        android:layout_alignEnd="@+id/etname"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Office Phone"
+        android:layout_below="@+id/etEmailSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etcell"
+        android:layout_width="match_parent"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Cell Number"
+        android:layout_below="@+id/etEmailSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/etcell"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+
+    <Spinner
+        android:id="@+id/spEstateNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/etAddress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/btnback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:text="Select Your RealEstate"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/etAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+</RelativeLayout>

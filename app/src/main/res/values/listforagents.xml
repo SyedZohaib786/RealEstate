@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Properties_Selection">
+        <item>Select Option..</item>
+        <item>All Agents</item>
+        <item>All Properties</item>
+        <item>Add Property</item>
+        <item>Search Property</item>
+        <item>Add RealEstate</item>
+        <item>Price Index</item>
+        <item>RealEstate</item>
+        <item>Add Agent</item>
+        <item>Add Client</item>
+        <item>All Clients</item>
+        <item>Specific Client</item>
+        <item>Commision</item>
+        <item>View Commision List</item>
+        <item>Contact Us</item>
+        <item>Map</item>
+        <item>Logout</item>
+
+
+
+        </string-array>
+</resources>

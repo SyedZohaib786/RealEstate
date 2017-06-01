@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain"
+    tools:context="com.fyp.hp.realestate.DeleteProperty">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/etUserName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="5px"
+        android:maxWidth="3px"
+        app:srcCompat="@drawable/realestate"
+        android:background="@drawable/realestatebackground"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,PxUsage,UnknownIdInLayout" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Enter Property Amount"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etAreaSqYrds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etAmount"
+        android:layout_alignRight="@+id/etAmount"
+        android:layout_below="@+id/etAmount"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Sq.Yrds"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnDlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAreaSqYrds"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Delete"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

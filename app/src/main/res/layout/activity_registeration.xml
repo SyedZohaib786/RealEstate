@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registeration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/plain"
+    tools:context="com.fyp.hp.realestate.Registeration">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/realestate"
+        tools:ignore="ContentDescription"
+        android:background="@drawable/realestatebackground"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/etFname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnexit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        tools:ignore="HardcodedText,UnusedAttribute"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="21sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:id="@+id/btnReg"
+        android:text="@string/btnBactToLogin"
+        android:textColor="@android:color/black"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnexit"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Full Name"
+        android:ems="10"
+        android:id="@+id/etFname"
+        android:gravity="center"
+        tools:targetApi="jelly_bean"
+        tools:ignore="HardcodedText"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_above="@+id/etAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etAddress"
+        android:hint="Enter Yor Address"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_above="@+id/etEmailSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textAlignment="center"
+        android:id="@+id/etEmailSearch"
+        android:hint="Enter Your Valid E-mail"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/etNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Account Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtaccnt"
+        android:textAllCaps="true"
+        android:textSize="22sp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:ems="10"
+        android:id="@+id/etNumber"
+        android:hint="Enter Your Number"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/txtaccnt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtuname"
+        android:hint="Enter Your User Name"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/txtaccnt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <EditText
+        android:id="@+id/txtupass"
+        android:hint="Enter Your Password"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtuname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        tools:ignore="HardcodedText"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_above="@+id/btnReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp" />
+
+    <RadioGroup
+        android:id="@+id/radioUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/txtupass"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioAgent"
+            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Agent"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioClient"
+            android:layout_width="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Client" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

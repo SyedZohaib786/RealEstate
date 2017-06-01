@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fyp.hp.realestate.AddClient"
+    android:background="@drawable/plain"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:maxHeight="5px"
+        android:maxWidth="3px"
+        app:srcCompat="@drawable/realestate"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,PxUsage"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/realestatebackground"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etRealEStateName"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Client Name"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etDes"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etRealEStateName"
+        android:layout_alignRight="@+id/etRealEStateName"
+        android:layout_below="@+id/etRealEStateName"
+        android:layout_marginTop="22dp"
+        android:hint="Enter Client Phone"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="phone"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etEstateAddress"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Client Cell"
+        android:layout_below="@+id/etDes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etEstatePhone"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType=""
+        android:hint="Enter Client E-mail"
+        android:layout_below="@+id/etEstateAddress"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etAddrssClient"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Client Address"
+        android:layout_below="@+id/etEstatePhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spSelectArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtAgents"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Spinner
+        android:id="@+id/spSelectSubArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/btnAddClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spSelectSubArea"
+        android:layout_alignRight="@+id/txt"
+        android:layout_alignEnd="@+id/txt"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        tools:ignore="HardcodedText" />
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtAgents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Agent"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/etAddrssClient"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your RealEstate"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/spSelectArea"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
